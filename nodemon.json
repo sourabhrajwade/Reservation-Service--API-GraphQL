@@ -1,0 +1,7 @@
+{
+    "env": {
+        "DATABASE_UR": "rajwade_123",
+        "DATABASE_PW": "Rajwade_123",
+        "DB_NAME": "graphQLBooking"
+    }
+}
