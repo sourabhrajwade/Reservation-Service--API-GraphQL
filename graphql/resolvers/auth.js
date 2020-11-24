@@ -1,5 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
 const User = require('../../models/user');
 
 module.exports = {
@@ -41,5 +42,4 @@ module.exports = {
     );
     return { userId: user.id, token: token, tokenExpiration: 1 };
   }
-
 };

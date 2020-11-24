@@ -5,10 +5,14 @@ const mongoose = require("mongoose");
 const port = 3000;
 const graphQlSchema = require('./graphql/schema/index');
 const graphQlResolvers = require('./graphql/resolvers/index');
+const isAuth = require('./middleware/is-auth'); 
 
 const app = express();
 
 app.use(bodyParser.json());
+
+app.use(isAuth);
+
 app.use(
   "/graphql",
   graphqlHTTP({
